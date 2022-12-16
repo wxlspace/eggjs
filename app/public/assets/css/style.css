@@ -1,0 +1,16 @@
+*{
+    list-style: none;
+    color: #22ab28;
+}
+.header-box{
+    display: flex;
+    margin-bottom: 20px;
+}
+.header-box li{
+    padding: 0 6px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
