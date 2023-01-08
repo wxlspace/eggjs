@@ -25,7 +25,7 @@ class HomeController extends Controller {
     const { ctx } = this;
     ctx.body = 'routerMiddleware page';
   }
-  
+ 
 }
 
 module.exports = HomeController;

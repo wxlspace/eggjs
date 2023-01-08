@@ -39,6 +39,21 @@ module.exports = appInfo => {
     secret: 'sssssss123'
   };
 
+  // https://github.com/eggjs/egg-sequelize
+  config.sequelize = {
+    dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
+    database: 'egg_node',
+    host: 'localhost',
+    port: 3306,
+    username: 'root',
+    password: 'root',
+    timezone: '+08:00',
+    // delegate: 'myModel', // load all models to `app[delegate]` and `ctx[delegate]`, default to `model`
+    // baseDir: 'my_model', // load all files in `app/${baseDir}` as models, default to `model`
+    // exclude: 'index.js', // ignore `app/${baseDir}/index.js` when load models, support glob and array
+    // more sequelize options
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

@@ -9,4 +9,6 @@ module.exports = app => {
   router.get('/json', controller.home.json);
   router.get('/jwt', controller.jwt.createToken);
   router.get('/routerMiddleware',app.middleware.routerCheck(), controller.home.routerMiddleware);
+  // router.get('/orm', controller.orm.index);
+  router.resources('/orm', controller.orm);
 };
